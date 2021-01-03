@@ -1,6 +1,6 @@
 {
   "name": "peru-doc-validators",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "Validaciones para los documentos de Identidad que se usan en el Perú",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
