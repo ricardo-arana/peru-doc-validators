@@ -1,15 +1,19 @@
+import { allTypes } from '../functions/all-types';
+import { TypesDoc } from './types-doc.interface';
 import { ResultValid } from './validators.model';
 
 export class Dni {
 
     status: ResultValid;
     errors: ResultValid[] = [];
+    info: TypesDoc;
 
     constructor(private number: string, private digit: string) {
         this.status = {
             code: -1,
             message: 'no validado'
         }
+        this.info = allTypes[0];
         this.validate();
     }
 
@@ -67,6 +71,10 @@ export class Dni {
             code: 1,
             message
         }
+    }
+
+    toString() {
+        return this.info.descripcionLarga;
     }
 
 
