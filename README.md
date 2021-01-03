@@ -4,6 +4,12 @@
 
 Pequeña libreria para la validacion de formatos de número de documentos
 
+## Instalación
+
+```
+npm install peru-doc-validators
+```
+
 ## Ejemplo
 
 ```javascript
